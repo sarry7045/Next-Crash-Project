@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
           crossOrigin="anonymous"
         />
-        <title>RD-MakeOver</title>
+        <title>NextJs-Crash-Project</title>
       </Head>
       <Component {...pageProps} />
     </>
