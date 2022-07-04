@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import Head from "next/head";
+import Layout from "../CrashComponents/Layout";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,7 +17,9 @@ function MyApp({ Component, pageProps }) {
         />
         <title>NextJs-Crash-Project</title>
       </Head>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }
