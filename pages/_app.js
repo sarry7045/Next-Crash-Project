@@ -17,9 +17,9 @@ function MyApp({ Component, pageProps }) {
         />
         <title>NextJs-Crash-Project</title>
       </Head>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      {/* <Layout> */}
+      <Component {...pageProps} />
+      {/* </Layout> */}
     </>
   );
 }
