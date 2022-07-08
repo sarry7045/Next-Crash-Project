@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import Head from "next/head";
 import Layout from "../CrashComponents/Layout";
+import { ChakraProvider } from "@chakra-ui/react";
+import Layoutt from "../TravelApp/Layoutt";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -18,7 +20,11 @@ function MyApp({ Component, pageProps }) {
         <title>NextJs-Crash-Project</title>
       </Head>
       {/* <Layout> */}
-      <Component {...pageProps} />
+      <ChakraProvider>
+        <Layoutt>
+          <Component {...pageProps} />
+        </Layoutt>
+      </ChakraProvider>
       {/* </Layout> */}
     </>
   );
