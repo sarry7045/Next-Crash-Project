@@ -12,12 +12,13 @@ import {
 import { FcMenu, FcHome, FcAbout } from "react-icons/fc";
 import { BsSearch } from "react-icons/bs";
 import { FiKey } from "react-icons/fi";
+import { AiFillHome } from "react-icons/ai";
 
 const Navbar = () => (
   <Flex p="2" borderBottom="1px" borderColor="gray.300">
-    <Box fontSize="3xl" color="blue.500" fontWeight="bold">
+    <Box fontSize="3xl" color="#4169E1" fontWeight="bold">
       <Link href="/" paddingLeft="2">
-        RealEstate
+        Rental
       </Link>
     </Box>
     <Spacer />
@@ -31,16 +32,24 @@ const Navbar = () => (
         />
         <MenuList>
           <Link href="/" passHref>
-            <MenuItem icon={<FcHome />}>Home</MenuItem>
+            <MenuItem icon={<AiFillHome style={{ color: "#4169E1" }} />}>
+              Home
+            </MenuItem>
           </Link>
           <Link href="/TravelSearch" passHref>
-            <MenuItem icon={<BsSearch />}>Search</MenuItem>
+            <MenuItem icon={<BsSearch style={{ color: "#4169E1" }} />}>
+              Search
+            </MenuItem>
           </Link>
           <Link href="/TravelSearch?purpose=for-sale" passHref>
-            <MenuItem icon={<FcAbout />}>Buy Property</MenuItem>
+            <MenuItem icon={<FcAbout style={{ color: "#4169E1" }} />}>
+              Buy Property
+            </MenuItem>
           </Link>
           <Link href="/TravelSearch?purpose=for-rent" passHref>
-            <MenuItem icon={<FiKey />}>Rent Property</MenuItem>
+            <MenuItem icon={<FiKey style={{ color: "#4169E1" }} />}>
+              Rent Property
+            </MenuItem>
           </Link>
         </MenuList>
       </Menu>

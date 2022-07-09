@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
           crossOrigin="anonymous"
         />
-        <title>NextJs-Crash-Project</title>
+        <title>Rental</title>
       </Head>
       {/* <Layout> */}
       <ChakraProvider>

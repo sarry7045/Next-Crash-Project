@@ -8,7 +8,7 @@ const Footer = () => (
     borderTop="1px"
     borderColor="gray.300"
   >
-    <sttrong>© 2022 RealEstate.</sttrong>
+    <strong>© All Rights Reserved | Rental.</strong>
   </Box>
 );
 

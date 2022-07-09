@@ -28,13 +28,15 @@ const SearchFilter = () => {
     router.push({ pathname: path, query });
   };
   return (
-    <Flex bg="gray.100" p="4" justifyContent="center" flexWrap="wrap">
+    <Flex bg="gray.200" p="4" justifyContent="center" flexWrap="wrap">
       {filter.map((value) => (
         <Box key={value.queryName}>
           <Select
             placeholder={value.placeholder}
             w="fit-content"
-            p="2"
+            p="3"
+            m="2"
+            justifyContent="space-between"
             onChange={(e) =>
               serachProperties({ [value.queryName]: e.target.value })
             }

@@ -7,7 +7,7 @@ export default function Layoutt({ children }) {
   return (
     <>
       <Head>
-        <title>Real Estate </title>
+        <title>Rental</title>
       </Head>
       <Box maxWidth="1280px" m="auto">
         <header>

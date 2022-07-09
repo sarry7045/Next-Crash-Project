@@ -6,6 +6,8 @@ import { BsFilter } from "react-icons/bs";
 import SearchFilter from "../TravelApp/SearchFilter";
 import Property from "../TravelApp/Property";
 import { baseUrl, fetchApi } from "../TravelApp/fetchApi";
+import { BsFilterSquareFill } from "react-icons/bs";
+import { IoFilter } from "react-icons/io5";
 
 const TravelSearch = ({ properties }) => {
   const [searchFilter, setsearchFilter] = useState(false);
@@ -18,18 +20,18 @@ const TravelSearch = ({ properties }) => {
         borderBottom="1px"
         borderColor="gray.200"
         p="2"
-        fontWeight="black"
+        fontWeight="600"
         fontSize="lg"
         alignItems="center"
         justifyContent="center"
         onClick={() => setsearchFilter((prevFilter) => !prevFilter)}
       >
-        <Text>Seacrh Property By Filter</Text>
-        <Icon paddingLeft="2" w="7" as={BsFilter} />
+        <Text bg="gray.100">Apply Filter</Text>
+        <Icon bg="gray.100" paddingLeft="2" w="7" fontSize="20" as={IoFilter} />
       </Flex>
       {searchFilter && <SearchFilter />}
       <Text fontSize="2xl" p="4" fontWeight="bold">
-        Properties{router.query.purpose}
+        Properties {router.query.purpose}
       </Text>
       <Flex flexWrap="wrap">
         {properties.map((property) => (
