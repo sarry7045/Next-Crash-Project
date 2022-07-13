@@ -8,7 +8,12 @@ const Footer = () => (
     borderTop="1px"
     borderColor="gray.300"
   >
-    <strong>© All Rights Reserved | Rental.</strong>
+    <strong>
+      © All Rights Reserved | Rental |{" "}
+      <a href="https://surajyadav.vercel.app/" target="_balnk">
+        Suraj Yadav
+      </a>
+    </strong>
   </Box>
 );
 
